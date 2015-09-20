@@ -1,0 +1,20 @@
+{
+	
+  "manifest_version": 2,
+ "name": "Download Facebook Chat",
+	"description": "For automatically downloading full chats on Facebook",
+	"version": "1.1",
+  "permissions": [
+	"tabs",
+    "activeTab",
+	"*://*.facebook.com/messages*"
+  ],
+  
+  "background": {
+		"scripts": ["jquery-1.11.3.min.js","background.js"]
+  },
+  "browser_action": {
+	  
+   "default_icon": "icon.png"
+  }
+}
